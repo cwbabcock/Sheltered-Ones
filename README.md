@@ -1,5 +1,6 @@
 # Sheltered-Ones
 Team Name: Sheltered Ones
+
 Project Description: Creating a centralized resource of information about homeless shelters.
 
 Team Roles:
