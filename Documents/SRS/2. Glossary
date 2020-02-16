@@ -1,0 +1,11 @@
+2.	Glossary (5 pts)
+•	Account: An entry into the database that holds a member’s information and restrictions and requires specific credentials to be accessed
+•	Address: The physical location of the shelter relative to street.
+•	Customer: A person that accesses the website for getting information about their local shelters.
+•	Database: The repository of account information for all registered users, alongside information about the shelters.
+•	Favorites: a bookmark functionality for users to save certain shelters onto their account
+•	IT Staff: Support members for the staff of the shelter that focus on work, maintenance and development of the website and the database.
+•	Shelter: A place for homeless people to receive food and bedding among other accommodations. A shorter word for homeless shelter.
+•	Shelter Staff: Members of the shelter who assist in day to day functionality of the shelter.
+•	Website: The service that acts to display information on the database for all users 
+•	Zip Code: The physical address of the shelter relative to county.
