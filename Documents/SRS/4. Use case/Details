@@ -1,0 +1,179 @@
+Use Case UC-1: Register
+Related Requirements: REQ-1, REQ-15, REQ-16, REQ-17, REQ-19
+Initiating Actor: Customer
+Actor’s Goal: To register an account on the website
+Participating Actors: Customer, System
+Preconditions: The system will request information about the customer from a registration page
+Postconditions: The customer’s account will be created and stored into the database
+Flow of Events for Main Success Scenario:
+—> 1. Customer accesses the website and clicks the “Register” button 
+<— 2. System returns a page that request to input necessary information 
+—> 3. Customer enters information into the data fields, then submits
+<— 4. System checks the username and email against current entries within the database
+a.	If the username or email is not unique, then return to Step 2 and notify that the login information already exists
+b.	If the username and email are both unique, then store it into the database, then notify the user of a successful registration
+
+
+Use Case UC-2: Database maintenance
+Related Requirements: REQ-11, REQ-12, REQ-13, REQ-14, REQ-22, REQ-25
+Initiating Actor: IT Staff
+Actor’s Goal: To be able to maintain stability for the database
+Participating Actors: IT Staff, System
+Preconditions: IT staff must be viewing the database and have an account.
+Postconditions: IT Staff has an updated back-up of the database or has successfully restored database
+Flow of Events for Main Success Scenario:
+—> 1. IT Staff sends a request to back up or restore the database  
+<— 2. System requests a selection of where to back-up or what to restore from
+—> 3. IT Staff inputs a selection
+<— 4. System verifies the operation; if true, then perform the back-up or restoration and updates the database accordingly
+a.	If there is not enough space to back-up the database, send an error message in Step 4 before the execution
+b.	If the requested operation from the IT Staff is accepted and is a back-up, then the database information is stored on the IT Staff’s storage device. If it is a restore instead of a back-up, then information is overwritten into the database
+
+
+Use Case UC-3: Adding new shelter with information
+Related Requirements: REQ-11, REQ-24, REQ-26
+Initiating Actor: IT Staff
+Actor’s Goal: To store and display a shelter’s information that has not yet been added
+Participating Actors: IT Staff, System
+Preconditions: Requires valid shelter organization information that does not already have an entry into the database
+Postconditions: The newly added shelter has information about it stored onto the database and is displayed onto the website
+Flow of Events for Main Success Scenario:
+—> 1. IT Staff sends a request to create another shelter entry 
+<— 2. System checks the possibility for another entry and sends IT Staff a message 
+a. If the IT Staff tries to add a shelter that already exists, system in Step 2 will send IT Staff an error message and exit
+b. If the IT Staff adds a new shelter, then request more info
+—> 3. Confirm decision and input shelter info 
+<— 4. System allocates a new location on the website and creates a database entry, then notifies IT Staff
+
+
+Use Case UC-4: View the website
+Related Requirements: REQ-3, REQ-4, REQ-5, REQ-23, REQ-24, REQ-25, REQ-26
+Initiating Actor: Customer
+Actor’s Goal: To view information on the website
+Participating Actors: Customer, System
+Preconditions: The Customer must have an internet connection. The system server must be online.
+Postconditions: The Customer will be able to view the website 
+Flow of Events for Main Success Scenario:
+—> 1. Customer inputs our website into the URL and sends an HTTP GET request to view the website
+<— 2. The system responds by sending the current website information
+a.	If the server has connectivity issues, send an error message in step 2.
+b.	If the Customer sends a GET request to view our website and our server is up, the system will send the information for the Customer to view the website.
+
+
+Use Case UC-5: View the database
+Related Requirements: REQ-2. REQ-7. REQ-10, REQ-11
+Initiating Actor: Shelter Staff
+Actor’s Goal: To be able to view the database that stores shelter information
+Participating Actors: Shelter Staff, System
+Preconditions: The Shelter Staff must be given permissions to access the database. Database must be functional.
+Postconditions: The Shelter Staff can view the database information for every shelter
+Flow of Events for Main Success Scenario:
+—> 1. Shelter Staff clicks a button request access to view the database
+<— 2. System verifies that the Shelter Staff has access or not, then sends a response
+a.	If the Shelter Staff is an invalid user, then send an error message
+b.	If the Shelter Staff is a valid user, then allow them to view the database
+
+
+Use Case UC-6: Update shelter information
+Related Requirements: 
+Initiating Actor: Shelter Staff
+Actor’s Goal: To make changes from their shelter organization’s information onto the database
+Participating Actors: Shelter Staff, System
+Preconditions: The Shelter Staff must be given permissions to access the database and requires information to be updated.
+Postconditions: The Shelter Staff can edit database information regarding their organization(s) 
+Flow of Events for Main Success Scenario:
+—> 1. Shelter Staff accesses the database, then makes a request to update the database
+<— 2. System displays their organization’s information
+—> 3. Shelter Staff modifies their information and sends the requested changes 
+<— 4. System updates the changes onto the database
+a.	If the Shelter Staff tries to update another organization’s shelter information, then the system will send an error message
+b.	If the Shelter Staff makes changes to their organization, then update the information onto the database and send a success message
+
+
+Use Case UC-7: Request shelter information
+Related Requirements: REQ-2, REQ-7, REQ-10
+Initiating Actor: Customer
+Actor’s Goal: To view each shelter organizations information.
+Participating Actors: Customer, System
+Preconditions: The shelter organization information must be stored within the database so it may be retrieved and displayed. Customer must be viewing the website.
+Postconditions: The Customer is given information regarding the number of available beds, their contact information, and their building address.
+Flow of Events for Main Success Scenario:
+—> 1. Customer selects the “Request shelter information” button
+<— 2. The system returns a new webpage to display information
+a.	If the server has connectivity issues, send an error message in step 2.
+b.	The system redirects the Customer to a webpage with the shelter’s information
+
+
+Use Case UC-8: Enter Current Address
+Related Requirements: REQ-5, REQ-6
+Initiating Actor: Customer
+Actor’s Goal: To input their desired address for searching nearby shelters
+Participating Actors: Customer, System
+Preconditions: The Customer must be able to manually enter their address in the “Address” text field on our website. Customer is accessing the website.
+Postconditions: The system returns a map displaying their inputted address along with nearby shelters
+Flow of Events for Main Success Scenario:
+—> 1. Customer selects the “Address” text field and inputs their address.
+<— 2. System returns a map to be displayed as an element on the website.
+a.	If the address could not be found, return an error message in step 2
+b.	If the address was found, the system will display a map on the website. The system provides nearby shelters and the ability to request information from them.
+
+
+Use Case UC-9: Enter current zip code
+Related Requirements: REQ-5
+Initiating Actor: Customer
+Actor’s Goal: To input their desired zip code for searching nearby shelters
+Participating Actors: Customer, System
+Preconditions: The user must be able to manually enter their address in the “Zip Code” text field on our website. Customer accesses the website.
+Postconditions: The system returns a map display their inputted zip code along with nearby shelters.
+Flow of Events for Main Success Scenario:
+—> 1. Customer selects the “Zip Code” text field and inputs their zip code.
+<— 2. System returns a map to be displayed as an element on the website.
+a.	If the zip code could not be found, return an error message in step 2
+b.	If the zip code was found, the system will display a map on the website. The system provides nearby shelters and the ability to request information from them.
+
+
+Use Case UC-10: View account profile
+Related Requirements: REQ-27, REQ-28
+Initiating Actor: Customer
+Actor’s Goal: To display basic account information and favorite shelters
+Participating Actors: Customer, System
+Preconditions: The Customer must be viewing the website and be logged into a registered account
+Postconditions: The Customer will be able to view a page displaying their basic account information and favorite shelters
+Flow of Events for Main Success Scenario:
+—> 1. Customer is logged into our website and viewing the homepage, then clicks the “View account profile” button
+<— 2. System redirects them to their account information webpage
+
+
+Use Case UC-11: Display nearest shelter
+Related Requirements: REQ-3, REQ-5, REQ-8, REQ-9, REQ-18
+Initiating Actor: Customer
+Actor’s Goal: To view nearby shelters from a given location
+Participating Actors: Customer, System
+Preconditions: The Customer must be viewing the website and be able to provide location information.
+Postconditions: The Customer will be able to view a map that shows the location of nearby shelters.
+Flow of Events for Main Success Scenario:
+—> 1. Customer clicks find nearby shelters button
+<— 2. System requests information such as address or zip code or current location
+—> 3. Inputs information into the text fields
+<— 4. System searches for the given location and sends a response
+       a. If the address could not be found, send an error message and return to Step 2
+       b. If the address is found, display a map element that shows nearby shelters
+
+
+Use Case UC-12: Log in
+Related Requirements: REQ-1, REQ-20, REQ-21
+Initiating Actor: Customer
+Actor’s Goal: To log into their private account
+Participating Actors: Customer, System
+Preconditions: The Customer must be viewing the website and have a registered account
+Postconditions: The Customer will be able view the website while being able to access their account
+Flow of Events for Main Success Scenario:
+—> 1. Customer clicks log-in
+<— 2. System requests username and password
+—> 3. Inputs required information into text fields
+<— 4. System matches the information with the database and sends a response
+       a. If the credentials did not match, send an error message and return to Step 2
+       b. If the credentials are correct, return the customer to homepage with account access
+
+
+
