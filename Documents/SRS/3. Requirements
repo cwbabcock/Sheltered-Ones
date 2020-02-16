@@ -1,0 +1,40 @@
+3.	System requirements (20 pts)
+
+Identifier	Priority	Description
+REQ-1	4	  The system will allow customers to create an account on the website and register with their information
+REQ-2	3	  The system will store shelter information only modified by shelter staff and IT staff
+REQ-3	2	  The system will display shelter information from a website
+REQ-4 3	  The system will allow users to view the name, address, and number of beds available at each listed shelter
+REQ-5	4	  The system will allow customers to search nearby shelters in respect to a given location. 
+REQ-6	3	  The system can take the device’s current location as an input
+REQ-7	5	  The system will show the time when the respective shelter’s information was last modified
+REQ-8	4	  The system will implement a street map functionality that includes the inputted source and destination
+REQ-9	  5	The system will implement the ability to give directions to a desired shelter
+REQ-10	3	The system will not allow shelter staff to modify information aside from their own shelter
+REQ-11	4	The system will allow IT staff to manually input an entry for a shelter
+REQ-12	3	The system will periodically update the website with the newest information stored onto the database
+REQ-13	4	The system allows IT staff to back up the database
+REQ-14	4	The system allows IT staff to restore the database from a restore point
+REQ-15	5	The system will send approval codes for shelter staff accounts and IT staff accounts to be created
+
+3.2. Non-functional requirements (required)
+
+Identifier	Priority	Description
+REQ-16	5	  To register, customer accounts will need to provide their full name and email
+REQ-17	5	  To register, shelter staff accounts must provide their organization name, organization address, phone number, email, first name, last name, and approval code
+REQ-18	3	  Customers will be able to select a nearby shelter to reveal additional information about them
+REQ-19	5	  Customers, IT staff, and shelter staff must create a password for their account and meet a criterion
+REQ-20	4	  Account passwords are encrypted
+REQ-21	4	  Users will need to input a username and password in order to log in
+REQ-22	3	  Changes made to the database should be automatically updated onto the website within a minute
+
+3.3. Other requirements (optional)
+
+Identifier	Priority	Description
+REQ-23	5 	Have an announcement page on the website that users may visit
+REQ-24	4	  A picture of the shelter’s building will be displayed next to their listing
+REQ-25	4 	Count how many unique customers have accessed our website
+REQ-26	4 	Display the total number of shelters listed on the website
+REQ-27	4	  Allow registered accounts to view their own profile
+REQ-28	4	  Allow registered accounts to store favorite shelters for more accessibility
+
