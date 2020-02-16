@@ -1,0 +1,46 @@
+1.	Introduction (5 pts)
+1.1	Problem statement
+  Homeless shelters offer beds to sleep on during the night; however, there are times when the beds for these shelters are filled up,
+  leaving homeless people with no place to sleep. They must travel to various other homeless shelters in search for vacant beds that they
+  can occupy.  Homeless people often lack transportation, so it can take them several minutes or a few hours of walking until they reach
+  their destination. Their journey continues until they discover a shelter that can take them in.
+
+  Homeless people frequently cannot access enough information about the homeless shelters regarding the number of beds available. 
+  They resort to taking a more tactical approach by visiting every homeless shelter they can, in hopes that they can find a bed.
+
+1.2	Proposed solution
+  We propose a strategic approach for homeless people in search of a bed. That is, a website that will display information about homeless shelters. 
+
+  The website will have details about various shelters, such as: description, location, phone number, and number of beds available.
+  Shelter organizations will periodically update the number of beds available, which will be inputted in the database and displayed
+  onto the website. Shelter organization’s entries onto our system may be added.
+
+  The website will inform the user of nearby shelters. This is accomplished by the website to conduct a search when given the address,
+  zip code, and/or their current location. A map service will pop-up on the website, displaying nearby homeless shelters relative to the
+  given location. There, customers may click on shelters to view their information. The map service will also provide directions if requested.
+
+  Our service will grant homeless people the information they need to determine which shelter to visit next.
+
+1.3	Novelty
+Our proposed solution will have these following set of features so that it may be a successful resource in combating the problem statement.
+  1.	Website registration
+  2.	Notify users if their credentials are incorrect
+  3.	Database that stores shelter organization’s background information
+  4.	Website that reflects database information
+  5.	Picture preview of the shelter
+  6.	Time when the information was updated
+  7.	System periodically updates the website information based on the database
+  8.	Allows customers to know how many beds are available at each shelter
+  9.	Multiple types of accounts, which are customer account, shelter staff account, and admin account
+  10.	Allows registered accounts to store favorite shelters for quick access
+  11.	Allows shelter staff to change their available bed count
+  12.	Find shelters near a given location
+  13.	Supports customers who use current location services
+  14.	Give directions from one address to another
+
+1.	Centralized information: Our website will display information gathered from various shelters.
+      This will be a valuable resource for those seeking shelter. Instead of searching through multiple shelter 
+      organization websites for specific information, they can initially enter our website and be complete with their research.
+    
+2.	Dynamic updates: Our system will periodically update what is being displayed on the website based on the information stored
+    inside the database. This maintains our displayed information to be relevant and accurate.
