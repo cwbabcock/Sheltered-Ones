@@ -1,0 +1,30 @@
+4. Use cases (70 pts)
+4.1. Summary (10 pts)
+Identifier	Short name	Description
+UC-1	Register	  To register an account on the website
+UC-2	Database management	  To be able to maintain stability for the database
+UC-3	Adding new shelter with information	  to store and display a shelter’s information that has not yet been added
+UC-4	View the website  	To view information on the website 
+UC-5	View the database 	to view information on the website
+UC-6	Update shelter information  	To modify information on the database
+UC-7	Request shelter information 	to view more information about a shelter
+UC-8	Enter current address	  to input their desired address for searching nearby shelters
+UC-9	Enter current zip code  	To input their desired zip code for searching nearby shelters
+UC-10	View account profile  	To display basic account information and favorite shelters
+UC-11	Display nearest shelter 	To show a map of shelters nearby a given location
+UC-12	Log-in	  To access an account on our website
+
+4.2. Actors (10 pts)
+
+Actor	Goal	Use cases
+Customer	To view the website	  UC-4
+Customer	To create an account on the website	UC-1,   UC-4
+Customer	To log into their private account	UC-1,  UC-4
+Customer	To view a listed shelter’s information	  UC-4, UC-7
+Customer 	To see what shelters are near their current location	  UC-4, UC-8, UC-9, UC-11
+Customer	To view their own profile 	UC-10
+Customer	To select and view their favorite shelters  	UC-4, UC-10
+Shelter Staff	To view the database	  UC-5
+Shelter Staff	To edit information being displayed onto the website regarding their own shelter	  UC-5, UC-6
+IT Staff	To add another shelter to the database so it can be displayed onto the website  	UC-3, UC-4, UC-5, UC-6
+IT Staff	To maintain the stability of the database 	UC-2, UC-5
