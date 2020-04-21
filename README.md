@@ -15,6 +15,7 @@ Team Roles:
     - Write documentation
     - Design software architecture
     - Create Star UML interfaces, diagrams, sequences
+    - Assist in website design
     
   ~ Front-end Web Developer: Roman Yacik
     - Design website for end-users
@@ -26,7 +27,7 @@ Physical Meetings: Every Thursday
 
 Digital Meetings: Once a week over the weekend
 
-Website: https://wordpress.com/home/shelteredones.wordpress.com
+Website: https://wengg1.wixsite.com/website
 
 Resources:
   ~Back Bay Mobile Soup Kitchen:
