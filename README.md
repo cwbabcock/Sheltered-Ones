@@ -3,6 +3,19 @@ Team Name: Sheltered Ones
 
 Project Description: Creating a centralized resource of information about homeless shelters.
 
+Features: 
+1. Register on the website
+2. Database management
+3. Add new shelters with information
+4. Accessible website
+5. Viewable database
+6. Update shelter information
+7. Request shelter information
+8. Enter current address to find shelters
+9. Enter current zip code to find shelters
+10. Display nearest shelter
+11. Log-in to website
+
 Team Roles:
   ~ Lead: Conor Babcock
     Responsibilities:
